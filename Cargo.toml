@@ -1,0 +1,16 @@
+[package]
+name = "twitch-auth"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+reqwest = { version = "0.11", features = ["json","blocking"] }
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rusqlite = {version = "0.31", features = ["bundled"]}
+poise = "0.6.1"
+dotenv = "0.15.0"
